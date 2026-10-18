@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ct2n6dtg53v6b" path="res://Main.cs" id="1_glv2v"]
 [ext_resource type="Script" uid="uid://b31r701w5ali8" path="res://Player.cs" id="2_r0du0"]
-[ext_resource type="Texture2D" uid="uid://c8ggp0fool2fp" path="res://icon.svg" id="2_uu6xs"]
+[ext_resource type="Texture2D" uid="uid://roohxd3s37iu" path="res://assets/ballred3.png" id="3_cm0pq"]
 [ext_resource type="PackedScene" uid="uid://ok10fv3f66ad" path="res://Moeda.tscn" id="4_cm0pq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cm0pq"]
@@ -16,7 +16,8 @@ position = Vector2(300, 200)
 script = ExtResource("2_r0du0")
 
 [node name="Icon" type="Sprite2D" parent="Player"]
-texture = ExtResource("2_uu6xs")
+scale = Vector2(4, 4)
+texture = ExtResource("3_cm0pq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 shape = SubResource("CircleShape2D_cm0pq")
